@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "61d94fe4-1ee5-4699-83a0-4223d8d69c09",
+		"name": "devil",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30081543",
+		"_collection_link": "https://www.postman.com/ravitech22/workspace/my-workspace/collection/30081543-61d94fe4-1ee5-4699-83a0-4223d8d69c09?action=share&source=collection_link&creator=30081543"
+	},
+	"item": [
+		{
+			"name": "create-admin-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"raju\", \r\n    \"email\":\"raju@gamil.com\",\r\n    \"phonenumber\":\"9491347544\",\r\n    \"password\":\"mygame\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/create-admin-user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"create-admin-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login-api",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"devil@gamil.com\",\r\n    \"password\":\"myproject\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/login",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "forgot-password",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"devil@gamil.com\",\r\n    \"password\":\"myproject\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/forgot-password",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"forgot-password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changepassword",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"devil@gamil.com\",\r\n    \"oldpassword\":\"myproject\",\r\n    \"newpassword\":\"myonlyone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/password-change",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"password-change"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "activate account",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"remo@gamil.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/users-activator",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"users-activator"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-user-non-admin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"remo\", \r\n    \"email\":\"remo@gamil.com\",\r\n    \"phonenumber\":\"98445520402\",\r\n    \"password\":\"mysinsare\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/create-user",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"create-user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
